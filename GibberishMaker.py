@@ -16,7 +16,7 @@ python3 GibberishMaker.py -m 10 -l 100 -c abcdef12345ABCDE -o generated.txt
 python3 GibberishMaker.py --max 5 --length 20 --outfile my2ndGib.txt
 '''
 
-parser = argparse.ArgumentParser(epilog=example_text)
+parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatterתepilog=example_text)
 
 parser.add_argument('--max', '-m', help='Set the maximumoccupancy120 characters.')
 parser.add_argument('--length', '-l', help='Set the amount of gibberished words.')
